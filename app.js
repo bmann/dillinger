@@ -22,12 +22,14 @@ const config = require('./config')(),
   fs = require('fs'),
   app = express(),
   core = require('./plugins/core/server.js'),
+  /* NO PLUGINS
   dropbox = require('./plugins/dropbox/server.js'),
   bitbucket = require('./plugins/bitbucket/server.js'),
   github = require('./plugins/github/server.js'),
   medium = require('./plugins/medium/server.js'),
   googledrive = require('./plugins/googledrive/server.js'),
   onedrive = require('./plugins/onedrive/server.js'),
+  */
   env = process.env.NODE_ENV || 'development';
 
 require('isomorphic-fetch') /* patch global fetch for dropbox module*/
@@ -128,12 +130,15 @@ app.get('/privacy', routes.privacy)
 app.get('/not-implemented', routes.not_implemented)
 
 app.use(core)
+
+/* NO PLUGINS
 app.use(dropbox)
 app.use(bitbucket)
 app.use(github)
 app.use(medium)
 app.use(googledrive)
 app.use(onedrive)
+*/
 
 app.listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'))
