@@ -1,0 +1,17 @@
+{
+  "name": "Dillinger",
+  "description": "Self-hosted Markdown editor",
+  "repository": "https://github.com/bmann/dillinger",
+  "env": {
+    "DILLINGER_TITLE": {
+      "description": "The name of your own Dillinger editor, used as a title.",
+      "value": "Dillinger.",
+      "required": false
+    },
+    "DILLINGER_DESCRIPTION": {
+      "description": "The description of your very own Dillinger editor.",
+      "value": "Dillinger, the last Markdown Editor, ever.",
+      "required": false
+    }
+  }
+}
