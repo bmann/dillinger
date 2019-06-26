@@ -12,6 +12,18 @@
       "description": "The description of your very own Dillinger editor.",
       "value": "Dillinger, the last Markdown Editor, ever.",
       "required": false
+    },
+    "DROPBOX_APP_KEY": {
+      "description": "YOUR_KEY - see https://github.com/joemccann/dillinger/blob/master/plugins/dropbox/README.md",
+      "required": false
+    },
+    "DROPBOX_APP_SECRET": {
+      "description": "YOUR_SECRET - see https://github.com/joemccann/dillinger/blob/master/plugins/dropbox/README.md",
+      "required": false
+    },
+    "DROPBOX_CALLBACK_URL": {
+      "description": "Full path to domain where you host this Dillinger, eg. https://YOURHEROKUAPP.herokuapp.com/oauth/dropbox",
+      "required": false
     }
   }
 }
